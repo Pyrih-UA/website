@@ -1,0 +1,72 @@
+/* Change these values when a visual design is ready. */
+:root {
+  --page-width: 72rem;
+  --page-padding: 1rem;
+  --section-spacing: 2rem;
+  --text-color: #000;
+  --background-color: #fff;
+  --border-color: #ccc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+header,
+main,
+footer {
+  width: min(100% - 2 * var(--page-padding), var(--page-width));
+  margin-inline: auto;
+}
+
+header,
+footer {
+  padding-block: 1rem;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section {
+  margin-block: var(--section-spacing);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
