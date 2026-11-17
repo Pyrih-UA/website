@@ -16,7 +16,7 @@ export function Header() {
       <nav aria-label="Головна навігація">
         <ul>{links.map(([label, href]) => <li key={href}><Link href={href}>{label}</Link></li>)}</ul>
       </nav>
-      <a href="https://forms.gle/mpTXEqdNj69JuRMW9">Подати заявку</a>
+      <a className="button header-button" href="https://forms.gle/mpTXEqdNj69JuRMW9">Подати заявку</a>
     </header>
   );
 }
